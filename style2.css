@@ -1,0 +1,10 @@
+
+body{
+width:800px;
+ margin:20px auto;
+ background:#c2c2c2;
+ }
+p:nth-child(2n){
+	border: 1px solid #000;
+}
+#submit{float:right; margin:5px 50px 10px 0;}

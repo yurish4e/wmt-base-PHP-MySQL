@@ -1,0 +1,219 @@
+/*http://color.romanuke.com/tsvetovaya-palitra-1955-2/    ЦВЕТОВАЯ ПАЛИТРА*/
+
+/****************************************************GLOBAL*/
+.padding-top-50px {
+    padding-top: 50px;
+}
+
+
+
+
+/****************************************************HEADE*/
+.row-header-image {
+    display: table-row;
+    width: 100%;
+    
+}
+#header-image {
+    background: #333 url(../image/bg-header.jpg) no-repeat;
+    height: 800px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+        #header-image h1 {
+            display: inline-block;
+            color: white;
+            margin: 0 auto;
+            vertical-align: middle;
+            font-size: 150px;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+/****************************************************NAVIGATION*/
+#menuShuffle {/* #menuShuffle:hover addClass to nav*/
+    height: 0;
+}
+#menuShuffle.goBot{
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 5;
+}
+nav {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.2s ease;
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+        nav a {
+            color: white;
+        }
+/*появление навигации, она выростает с топа*/
+nav.sticky-before {
+    height: 0;
+}
+/*add class to nav after scrollTop 850 */
+        nav.sticky {
+          background-color: rgba(0,0,0,0.2);
+          position: fixed;
+          top: 0;
+          width: 100%;
+          text-align: left;
+          padding-left: 20px;
+          z-index: 5;
+          height: 50px;
+        }
+            nav.sticky:hover {
+                background-color: rgba(0,0,0,0.7);
+            }
+                    nav.sticky li {transition: all 0.2s ease;}
+                    nav.sticky li:hover {
+                        transform:scale(1.2);
+                    }
+        nav>li a {
+            color: red;
+        }
+        nav >li.active {
+            background-color: rgba(62,148,178,1);
+            
+        }
+/*add class to nav when #menuShuffle :hover*/
+        nav.hovered {
+            background-color: rgba(0,0,0,0.5);
+        }
+
+/***************************************************CONTENT 3 diva*/
+.thumbnail {
+    padding: 50px 10px;
+}
+    .thumbnail h3{
+        text-align: center;
+}
+.thumbnail img {
+    padding-bottom: 20px;
+}
+/***************************************************CONTENT*/
+section {
+    width: 100%;
+    padding: 20px 150px;
+}
+.row {
+margin: 0;
+padding: 0;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+#about {
+    background-color: rgb(231,141,30);
+    height: 500px;
+    font-size: 20px;
+}
+.restavration {
+    background-color: rgb(246,246,244);
+}
+        .restavration>p {
+            margin-bottom: 50px;
+        }
+        .restavration .col-md-4 {
+            margin: 5px 10px;
+            width: 29%;
+        }
+        .restavration .fontsss{
+            height: 400px;
+            padding: 0;
+            border-bottom: 3px solid rgb(234,234,234);
+            background-color: white;
+        }
+                .restavration .fontsss h2{
+                    padding: 310px 20px 0 20px;
+                    margin-top: 0;
+                    color: rgb(158,164,179);
+                }
+        .greenfon {
+            width: 100%;
+            height: 300px;
+            background-color: green;
+        }
+        .redfon {
+            width: 100%;
+            height: 300px;
+            background-color: red;
+        }
+.head-of-section/*Заголовки разделов*/
+{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 400px 50px 400px;
+    border-bottom: 1px solid #ccc;
+}
+#service .head-of-section {
+    color: white;
+}
+.foto-redact {
+    background-image: url(../image/redact/1.jpg);
+    width: 100%;
+    height: 450px;
+    transition: all 0.4s linear;
+}
+        .foto-redact:hover {
+            background-image: url(../image/redact/2.jpg);
+}
+.foto-retush { 
+    width: 35%;
+    height: 600px;
+    float: left;
+    background-image: url(../image/retush/1.jpg);
+}
+.foto-retush:hover {
+    background-image: url(../image/retush/2.jpg);
+}
+/***************************************************CONTENT PARALLAX*/
+#about-header-image {
+    background: url(../image/bg-header-head.jpg) 50% 0 repeat fixed; min-height: 400px;
+    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+}
+        #about-header-image article {
+          height: 50px;
+          background-color: rgba(0,0,0,0.3);
+          position: absolute;
+          text-align: center;
+          top: 150px;
+          width: 90%;
+        }
+#service-header-image {
+    background: url(../image/bg-header.jpg) 50% 0 repeat fixed; min-height: 400px;
+    height: 400px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+}
+#service {
+    background-color: rgb(24,37,79); 
+    height: 1200px;
+}
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+
+/****************************************************MEDIA/
+
+@media handheld,
+screen and (max-width: 800px),
+screen and (max-device-width: 800px) {
+    
+}
